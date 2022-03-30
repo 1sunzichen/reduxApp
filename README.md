@@ -10,4 +10,14 @@
 ### 什么时候应该使用Redux？
 ### Redux库和工具
 
+### Action 与图书馆互动的类型
 
+### Reducer 图书管理员
+
+### store   图书馆
+
+### compoonent 借书和还书的人
+
+### dispatch 互动的动作 会对数据有影响
+
+### Selector 提取数据 不会对数据造成影响
