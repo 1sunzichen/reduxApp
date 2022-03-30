@@ -42,9 +42,9 @@ function Booklist() {
       <div>
         <List>
             {bookList.map((item,index)=>{
-               return  <ListItem key={index}><Button onClick={()=>{
+               return  <ListItem key={index}><Button  onClick={()=>{
                    dispatch(remove(item.name))
-               }}>借书+</Button>{item.name} {item.count}<Button onClick={()=>{ dispatch(add(item.name))}}>还书-</Button></ListItem>
+               }}>借书-</Button>{item.name} {item.count}<Button onClick={()=>{ dispatch(add(item.name))}}>还书+</Button></ListItem>
             })}
         </List>
       </div>

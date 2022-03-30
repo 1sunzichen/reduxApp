@@ -8,24 +8,24 @@ export const chineseBookSlice=createSlice({
     ],
     reducers:{
         add:(state,action)=>{
-            const newState=state.map(item=>{
+             state.map(item=>{
                 console.log(action,item,'namename',state);
-                if(item.name===action.payload.name){
+                if(item.name===action.payload){
                     item.count+=1;
                 }
                 return item;
             })
-            state= newState;
+          
         },
         remove:(state,action)=>{
-            const newState=state.map(item=>{
+            state.map(item=>{
                 console.log(action,item,'namename');
-                if(item.name===action.payload.name){
+                if(item.name===action.payload){
                     item.count-=1;
                 }
                 return item;
             })
-            state= newState;
+            
         }
     }
 })
